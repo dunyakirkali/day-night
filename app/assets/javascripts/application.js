@@ -16,3 +16,9 @@
 //= require_tree .
 
 $(document).foundation();
+
+$(function() {
+  setInterval(function(){
+    $.getScript('/');
+  }, 10000);
+});

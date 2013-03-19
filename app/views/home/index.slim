@@ -1,9 +1,8 @@
-h1 Day & Night
-h2
-  = "#{@city}, #{@country}"
-div
-  = "#{@latitude}, #{@longitude}"
-div
-  = "#{@sss.to_s}"
+- content_for :body_style do
+  = @base_color
 
-= link_to "Poll", home_poll_path, remote: true
+h3= "#{@city}, #{@country}"
+/ TODO display map
+div= "#{@latitude}, #{@longitude}"
+/ TODO move to helper
+div= "#{@sss.sunrise.strftime("at %I:%M%p")}¸,ø¤º°`#{@sss.solNoon.strftime("at %I:%M%p")}`°º¤ø,¸#{@sss.sunset.strftime("at %I:%M%p")}"

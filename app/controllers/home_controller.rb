@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  respond_to :js, :only => :poll
   def index
     @city = request.location.city
     @country = request.location.country_code
@@ -7,7 +6,18 @@ class HomeController < ApplicationController
     @longitude = request.location.longitude
 
     @sss = SunRiseSet.now(@latitude, @longitude)
-  end
-  def poll
+
+    @local_time = Time.now
+    # TODO move logic to model
+    if @local_time < @sss.sunrise || @local_time > @sss.sunset
+      fade = 0
+    else
+      if @local_time < @sss.solNoon
+        fade = (@local_time - @sss.sunrise) / (@sss.solNoon - @sss.sunrise) * 0.8
+      else
+        fade = (1.0 - (@local_time - @sss.solNoon) / (@sss.sunset - @sss.solNoon)) * 0.8
+      end
+    end
+    @base_color = ColorMath::HSL.new(212, 0.5, fade).hex
   end
 end

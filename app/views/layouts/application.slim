@@ -8,5 +8,8 @@ html
     = javascript_include_tag "vendor/custom.modernizr"
     = javascript_include_tag "application"	
     = csrf_meta_tags
-  body
+  body style="background-color:#{ yield(:body_style) }"
+    h1 Day & Night
+    div#clock
+      h2 = @local_time
     = yield
