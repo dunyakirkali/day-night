@@ -6,7 +6,7 @@ class HomeController < ApplicationController
     @latitude = request.location.latitude
     @longitude = request.location.longitude
 
-    sss = SunRiseSet.now(@latitude, @longitude).to_s
+    @sss = SunRiseSet.now(@latitude, @longitude)
   end
   def poll
   end

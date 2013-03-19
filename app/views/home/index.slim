@@ -4,6 +4,6 @@ h2
 div
   = "#{@latitude}, #{@longitude}"
 div
-  = "#{@sss}"
+  = "#{@sss.to_s}"
 
 = link_to "Poll", home_poll_path, remote: true
