@@ -1,10 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @city = request.location.city
-    @country = request.location.country_code
-    @latitude = request.location.latitude
-    @longitude = request.location.longitude
-    @sss = SunRiseSet.now(@latitude, @longitude)
+    @location = request.location
+    @sss = SunRiseSet.now(@location.latitude, @location.longitude)
     @local_time = Time.now
 
     # TODO move logic to model

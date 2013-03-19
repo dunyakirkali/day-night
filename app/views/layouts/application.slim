@@ -14,5 +14,16 @@ html style="background-color:#{ yield(:html_style) }"
         li.name
           h1
             a href="#{root_path}" Day & Night
+      section.top-bar-section
+        ul.right
+          li.divider
+          li
+            a.info-modal-link data-reveal-id="infoModal" href="reveal" Info
+          li.divider
     div.row
       = yield
+    div#infoModal.reveal-modal.small
+      = image_tag "http://maps.google.com/maps/api/staticmap?size=200x200&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}"
+      h3= "#{@location.city}, #{@location.country}"
+      a href="perceptor.nl" Perceptor
+      a.close-reveal-modal ×
