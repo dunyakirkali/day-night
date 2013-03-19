@@ -20,3 +20,4 @@ end
 gem 'jquery-rails'
 gem 'slim'
 gem 'unicorn'
+gem 'geocoder'

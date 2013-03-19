@@ -1,2 +1,7 @@
 h1 Day & Night
+h2
+  = "#{@city}, #{@country}"
+div
+  = "#{@latitude}, #{@longitude}"
+
 = link_to "Poll", home_poll_path, remote: true
