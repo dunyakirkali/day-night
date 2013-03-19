@@ -15,5 +15,8 @@ html style="background-color:#{ yield(:html_style) }"
     div#infoModal.reveal-modal.small
       = image_tag "http://maps.google.com/maps/api/staticmap?size=200x200&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}"
       h3= "#{@location.city}, #{@location.country}"
-      a href="perceptor.nl" Perceptor
+      p
+        a href="http://perceptor.nl" target='_blank' Perceptor
+        span= " y "
+        a href="http://joychiquita.com/" target='_blank' Chiquita
       a.close-reveal-modal ×

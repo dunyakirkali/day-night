@@ -15,7 +15,6 @@ class HomeController < ApplicationController
         fade = (1.0 - ((@local_time.to_i - @sss.solNoon.to_i) / (@sss.sunset.to_i - @sss.solNoon.to_i).to_f)) * 0.8
       end
     end
-
     @base_color = ColorMath::HSL.new(212, 0.5, fade).hex
 
     respond_to do |format|
