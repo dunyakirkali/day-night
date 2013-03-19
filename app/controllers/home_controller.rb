@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @title = 'Day & Night'
     @location = request.location
     @sss = SunRiseSet.now(@location.latitude, @location.longitude)
     @local_time = Time.now
