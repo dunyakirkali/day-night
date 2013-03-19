@@ -17,5 +17,10 @@ class HomeController < ApplicationController
     end
 
     @base_color = ColorMath::HSL.new(212, 0.5, fade).hex
+
+    respond_to do |format|
+      format.html
+      format.js { render :layout => false }
+    end
   end
 end
