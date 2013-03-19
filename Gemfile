@@ -10,8 +10,12 @@ group :assets do
   gem 'slim'
 end
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
+end
+
+group :production, :staging do
+  gem 'pg'
 end
 
 gem 'jquery-rails'
