@@ -17,8 +17,11 @@
 
 $(document).foundation();
 
+function timeout() {
+  $.getScript('/');
+  return false;
+}
+
 $(function() {
-  setInterval(function(){
-    $.getScript('/');
-  }, 10000);
+  timeout();
 });

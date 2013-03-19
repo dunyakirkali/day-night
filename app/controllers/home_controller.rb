@@ -4,20 +4,20 @@ class HomeController < ApplicationController
     @country = request.location.country_code
     @latitude = request.location.latitude
     @longitude = request.location.longitude
-
     @sss = SunRiseSet.now(@latitude, @longitude)
-
     @local_time = Time.now
+
     # TODO move logic to model
     if @local_time < @sss.sunrise || @local_time > @sss.sunset
       fade = 0
     else
       if @local_time < @sss.solNoon
-        fade = (@local_time - @sss.sunrise) / (@sss.solNoon - @sss.sunrise) * 0.8
+        fade = (@local_time.to_i - @sss.sunrise.to_i) / (@sss.solNoon.to_i - @sss.sunrise.to_i).to_f * 0.8
       else
-        fade = (1.0 - (@local_time - @sss.solNoon) / (@sss.sunset - @sss.solNoon)) * 0.8
+        fade = (1.0 - ((@local_time.to_i - @sss.solNoon.to_i) / (@sss.sunset.to_i - @sss.solNoon.to_i).to_f)) * 0.8
       end
     end
+
     @base_color = ColorMath::HSL.new(212, 0.5, fade).hex
   end
 end

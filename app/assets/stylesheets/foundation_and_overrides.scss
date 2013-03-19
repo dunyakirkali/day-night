@@ -15,27 +15,27 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
-// $body-font-style: normal;
+$body-bg: transparent;
+$body-font-color: #222;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
-// $text-direction: ltr;
+$text-direction: ltr;
 
 // We use these as default colors throughout
-// $primary-color: #2ba6cb;
-// $secondary-color: #e9e9e9;
-// $alert-color: #c60f13;
-// $success-color: #5da423;
+$primary-color: #2ba6cb;
+$secondary-color: #e9e9e9;
+$alert-color: #c60f13;
+$success-color: #5da423;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-radius: 3px;
+$global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -50,69 +50,69 @@
 // Grid Variables
 //
 
-// $row-width: 62.5em;
-// $column-gutter: 1.875em;
-// $total-columns: 12;
+$row-width: 62.5em;
+$column-gutter: 1.875em;
+$total-columns: 12;
 
 //
 // Block Grid Variables
 //
 
 // We use this to control the maximum number of block grid elements per row
-// $block-grid-elements: 12;
-// $block-grid-default-spacing: 10px;
+$block-grid-elements: 12;
+$block-grid-default-spacing: 10px;
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
-// $block-grid-media-queries: true;
+$block-grid-media-queries: true;
 
 //
 // Typography Variables
 //
 
 // We use these to control header font styles
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
-// $header-font-style: normal;
-// $header-font-color: #222;
-// $header-line-height: 1.4;
-// $header-top-margin: .2em;
-// $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: bold;
+$header-font-style: normal;
+$header-font-color: #222;
+$header-line-height: 1.4;
+$header-top-margin: .2em;
+$header-bottom-margin: .5em;
+$header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: emCalc(44px);
-// $h2-font-size: emCalc(37px);
-// $h3-font-size: emCalc(27px);
-// $h4-font-size: emCalc(23px);
-// $h5-font-size: emCalc(18px);
-// $h6-font-size: 1em;
+$h1-font-size: emCalc(44px);
+$h2-font-size: emCalc(37px);
+$h3-font-size: emCalc(27px);
+$h4-font-size: emCalc(23px);
+$h5-font-size: emCalc(18px);
+$h6-font-size: 1em;
 
 // These control how subheaders are styled.
-// $subheader-line-height: 1.4;
-// $subheader-font-color: lighten($header-font-color, 30%);
-// $subheader-font-weight: 300;
-// $subheader-top-margin: .2em;
-// $subheader-bottom-margin: .5em;
+$subheader-line-height: 1.4;
+$subheader-font-color: lighten($header-font-color, 30%);
+$subheader-font-weight: 300;
+$subheader-top-margin: .2em;
+$subheader-bottom-margin: .5em;
 
 // A general <small> styling
-// $small-font-size: 60%;
-// $small-font-color: lighten($header-font-color, 30%);
+$small-font-size: 60%;
+$small-font-color: lighten($header-font-color, 30%);
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
-// $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: emCalc(20px);
-// $paragraph-aside-font-size: emCalc(14px);
-// $paragraph-aside-line-height: 1.35;
-// $paragraph-aside-font-style: italic;
+$paragraph-font-family: inherit;
+$paragraph-font-weight: normal;
+$paragraph-font-size: 1em;
+$paragraph-line-height: 1.6;
+$paragraph-margin-bottom: emCalc(20px);
+$paragraph-aside-font-size: emCalc(14px);
+$paragraph-aside-line-height: 1.35;
+$paragraph-aside-font-style: italic;
 
 // We use these to style <code> tags
-// $code-color: darken($alert-color, 15%);
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
-// $code-font-weight: bold;
-
+$code-color: darken($alert-color, 15%);
+$code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+$code-font-weight: bold;
+//
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-font-color: $primary-color;
@@ -173,21 +173,21 @@
 // $form-spacing: emCalc(16px);
 
 // We use these to style the labels in different ways
-// $label-pointer: pointer;
-// $label-font-size: emCalc(14px);
-// $label-font-weight: 500;
-// $label-font-color: lighten(#000, 30%);
-// $label-bottom-margin: emCalc(3px);
-// $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: emCalc(14px);
-// $input-bg-color: #fff;
-// $input-focus-bg-color: darken(#fff, 2%);
-// $input-border-color: darken(#fff, 20%);
-// $input-focus-border-color: darken(#fff, 40%);
-// $input-border-style: solid;
-// $input-border-width: 1px;
-// $input-disabled-bg: #ddd;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$label-pointer: pointer;
+$label-font-size: emCalc(14px);
+$label-font-weight: 500;
+$label-font-color: lighten(#000, 30%);
+$label-bottom-margin: emCalc(3px);
+$input-font-color: rgba(0,0,0,0.75);
+$input-font-size: emCalc(14px);
+$input-bg-color: #fff;
+$input-focus-bg-color: darken(#fff, 2%);
+$input-border-color: darken(#fff, 20%);
+$input-focus-border-color: darken(#fff, 40%);
+$input-border-style: solid;
+$input-border-width: 1px;
+$input-disabled-bg: #ddd;
+$input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
@@ -628,21 +628,21 @@
 // $pagination-li-margin: emCalc(5px);
 
 // We use these for the pagination anchor links
-// $pagination-link-pad: emCalc(1px) emCalc(7px) emCalc(1px);
-// $pagination-link-font-color: #999;
-// $pagination-link-active-bg: darken(#fff, 10%);
+$pagination-link-pad: emCalc(1px) emCalc(7px) emCalc(1px);
+$pagination-link-font-color: #999;
+$pagination-link-active-bg: darken(#fff, 10%);
 
 // We use these for disabled anchor links
-// $pagination-link-unavailable-cursor: default;
-// $pagination-link-unavailable-font-color: #999;
-// $pagination-link-unavailable-bg-active: transparent;
+$pagination-link-unavailable-cursor: default;
+$pagination-link-unavailable-font-color: #999;
+$pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
-// $pagination-link-current-background: $primary-color;
-// $pagination-link-current-font-color: #fff;
-// $pagination-link-current-font-weight: bold;
-// $pagination-link-current-cursor: default;
-// $pagination-link-current-active-bg: $primary-color;
+$pagination-link-current-background: $primary-color;
+$pagination-link-current-font-color: #fff;
+$pagination-link-current-font-weight: bold;
+$pagination-link-current-cursor: default;
+$pagination-link-current-active-bg: $primary-color;
 
 //
 // Panel Variables
@@ -946,23 +946,23 @@
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+$topbar-bg: #111;
 
 // Height and margin
-// $topbar-height: 45px;
-// $topbar-margin-bottom: emCalc(30px);
+$topbar-height: 45px;
+$topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
-// $topbar-input-height: 2.45em;
+$topbar-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+$topbar-title-weight: bold;
+$topbar-title-font-size: emCalc(17px);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13px);
+$topbar-link-color: #fff;
+$topbar-link-weight: bold;
+$topbar-link-font-size: emCalc(13px);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;

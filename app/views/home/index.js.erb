@@ -1,5 +1,5 @@
-$('body').animate({
-  'background-color': "<%= @base_color %>"
-}, 5000, function() {
-  console.log('done');
+$('html').animate({
+  backgroundColor: "<%= @base_color %>"
+}, 10000, function() {
+  timeout();
 });
